@@ -6,7 +6,9 @@
     <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
-    <header>
-        <h1><a href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo( 'name' ); ?></a></h1>
-        <p><?php bloginfo( 'description' ); ?></p>
-    </header> 
+<header class="site-header">
+    <a href="<?php echo esc_url( home_url( '/' ) ); ?>">
+        <img src="<?php echo get_template_directory_uri(); ?>/pooandpoo.png" alt="<?php bloginfo( 'name' ); ?>" class="site-logo">
+    </a>
+    <p><?php bloginfo( 'description' ); ?></p>
+</header>

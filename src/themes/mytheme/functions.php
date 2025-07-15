@@ -19,12 +19,5 @@ function mytheme_register_menus() {
 }
 add_action('after_setup_theme', 'mytheme_register_menus');
 
-require_once get_template_directory() . '/class-wp-bootstrap-navwalker.php';
-
-get_header();
-if ( have_posts() ) :
-    while ( have_posts() ) : the_post();
-        the_content();
-    endwhile;
-endif;
-get_footer(); 
+// Incluir el navwalker de Bootstrap
+require_once get_template_directory() . '/class-wp-bootstrap-navwalker.php'; 
