@@ -10,9 +10,13 @@ services:
         ports:
             - "8080:80"
             - "443:443"
+        networks:   
+            - internal
 
         volumes:
-            - ./nginx.conf:/etc/nginx/conf.d:rw
+            - ./nginx/default.conf:/etc/nginx/conf.d/default.conf:rw
+            - wordpress:/var/www/html
+            - ./src:/var/www/html/wp-content:rw
     database:
         container_name: ${CONTAINER_NAME}-database
         image: mysql:5.7
