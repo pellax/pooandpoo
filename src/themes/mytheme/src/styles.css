@@ -1,0 +1,96 @@
+body {
+    background: #000;
+    color: #000;
+    margin: 0em;
+    padding-top: 0px;
+    margin-top: 0px;
+}
+
+.site-title {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-top: 0px;
+    margin-bottom: 0.2em;
+    letter-spacing: 0.05em;
+}
+.site-description {
+    font-size: 1.5rem;
+    color: #000;
+    margin-bottom: 1em;
+}
+.site-header {
+    padding-top: 0px;
+    margin-top: 0px;
+    padding-bottom: 2em;
+    background: #000;
+    text-align: center;
+}
+.site-logo {
+    position:relative;
+    z-index: 1;
+    max-width: 520px;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -100px;
+    padding-top: 0px;
+    background-color: #000 !important;
+    transition: max-width 0.3s;
+}
+
+@media (max-width: 992px) {
+    .site-logo {
+        max-width: 320px;
+    }
+}
+@media (max-width: 768px) {
+    .site-logo {
+        max-width: 180px;
+    }
+}
+@media (min-width: 992px) {
+    .navbar.container-fluid {
+        flex-direction: column;
+        font-weight: bold;
+        letter-spacing: 0.05em;
+        font-size: 1.5rem;
+        color: #000;
+        background-color: #000 !important;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0px;
+        padding-top: 0px;
+        position:relative;
+    } 
+}
+    
+.navbar.container-fluid {
+    flex-direction: column;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+    font-size: 1.5rem;
+    color: #000;
+    background-color: #000 !important;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0px;
+    padding-top: 0px;
+    position:relative;
+}
+
+
+.navbar.bg-dark {
+    background-color: #000 !important;
+    margin-top: -20px;
+    padding-top: 0px;
+    position:relative;
+    z-index: 1;
+    display:flex;
+}
+
+
+
+header.jumbotron {
+    background: #000 !important;
+}

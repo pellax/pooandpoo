@@ -20,4 +20,18 @@ function mytheme_register_menus() {
 add_action('after_setup_theme', 'mytheme_register_menus');
 
 // Incluir el navwalker de Bootstrap
-require_once get_template_directory() . '/class-wp-bootstrap-navwalker.php'; 
+require_once get_template_directory() . '/class-wp-bootstrap-navwalker.php';
+
+function mytheme_enqueue_webpack_bundle() {
+    $bundle = get_template_directory() . '/dist/bundle.js';
+    if ( file_exists( $bundle ) ) {
+        wp_enqueue_script(
+            'mytheme-bundle',
+            get_template_directory_uri() . '/dist/bundle.js',
+            array(),
+            filemtime( $bundle ),
+            true
+        );
+    }
+}
+add_action('wp_enqueue_scripts', 'mytheme_enqueue_webpack_bundle'); 
