@@ -4,6 +4,10 @@ body {
     margin: 0em;
     padding-top: 0px;
     margin-top: 0px;
+    
+}
+#main-content {
+    margin-left: 250px;
 }
 
 .site-title {
@@ -72,11 +76,12 @@ body {
     font-size: 1.5rem;
     color: #000;
     background-color: #000 !important;
-    justify-content: center;
+    
     align-items: center;
     margin-top: 0px;
     padding-top: 0px;
     position:relative;
+
 }
 
 
@@ -87,6 +92,7 @@ body {
     position:relative;
     z-index: 1;
     display:flex;
+
 }
 
 
@@ -94,3 +100,28 @@ body {
 header.jumbotron {
     background: #000 !important;
 }
+
+.sidebar {
+    background: #000 !important;
+    color: #fff !important;
+    width: 250px; 
+    top: 0; 
+    left: 0; 
+    z-index: 1040;
+    position: fixed;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    overflow-y: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar .nav-link {
+    color: #fff !important;
+}
+
+.sidebar .nav-link:hover, .sidebar .nav-link:focus {
+    background: #222 !important;
+    color: #fff !important;
+}
+
