@@ -10,7 +10,7 @@
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark justify-content-center p-0 m-0">
     <div class="container-fluid justify-content-center p-0 m-0">
-        <a class="navbar-brand mx-auto d-flex flex-column align-items-center p-0 m-0" href="<?php echo home_url(); ?>">
+        <a class="navbar-brand mx-auto d-flex flex-column align-items-center p-0 m-0" href="<?php echo get_permalink(get_page_by_path('inicio')); ?>">
         <img src="<?php echo get_template_directory_uri(); ?>/pooandpoo.png" alt="" class="site-logo">
             <!-- Optional: Add site name below the logo -->
             <!-- <span class="h4 mt-2 text-white"><?php bloginfo('name'); ?></span> -->
@@ -24,20 +24,20 @@
     <h5>Menú</h5>
     <ul class="nav flex-column">
       <li class="nav-item">
-        <a class="nav-link text-white" href="#"><span class="diamond"></span><span class="menu-text">Inicio</span></a>
+        <a class="nav-link text-white" href="<?php echo get_permalink(get_page_by_path('nuestras-obras')); ?>"><span class="diamond"></span><span class="menu-text">Nuestras obras</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link text-white" href="#"><span class="diamond"></span><span class="menu-text">Acerca de</span></a>
+        <a class="nav-link text-white" href="<?php echo get_permalink(get_page_by_path('biografia')); ?>"><span class="diamond"></span><span class="menu-text">Biografía</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link text-white" href="#"><span class="diamond"></span><span class="menu-text">Exposiciones</span></a>
+        <a class="nav-link text-white" href="<?php echo get_permalink(get_page_by_path('exposiciones')); ?>"><span class="diamond"></span><span class="menu-text">Exposiciones</span></a>
 
       </li>
       <li class="nav-item">
-        <a class="nav-link text-white" href="#"><span class="menu-text">Contacto</span><span class="diamond"></span></a>
+        <a class="nav-link text-white" href="<?php echo get_permalink(get_page_by_path('publicaciones')); ?>"><span class="diamond"></span><span class="menu-text">Publicaciones</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link text-white" href="#"><span class="diamond"></span>Contacto</a>
+        <a class="nav-link text-white" href="<?php echo get_permalink(get_page_by_path('contacto')); ?>"><span class="diamond"></span><span class="menu-text">Contacto</span></a>
       </li>
       <!-- Agrega más enlaces aquí -->
     </ul>
