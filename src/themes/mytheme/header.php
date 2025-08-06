@@ -8,15 +8,10 @@
 </head>
 <body <?php body_class(); ?>>
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark justify-content-center p-0 m-0">
-    <div class="container-fluid justify-content-center p-0 m-0">
-        <a class="navbar-brand mx-auto d-flex flex-column align-items-center p-0 m-0" href="<?php echo get_permalink(get_page_by_path('inicio')); ?>">
-        <img src="<?php echo get_template_directory_uri(); ?>/pooandpoo.png" alt="" class="site-logo">
-            <!-- Optional: Add site name below the logo -->
-            <!-- <span class="h4 mt-2 text-white"><?php bloginfo('name'); ?></span> -->
-        </a>
-    </div>
-</nav>
+<a href="<?php echo home_url('/'); ?>">
+  <img src="<?php echo get_template_directory_uri(); ?>/pooandpoo.png" alt="" class="site-logo d-block mx-auto">
+</a>
+
 
 <!-- Menú lateral (offcanvas) -->
 <div class="sidebar bg-black text-white position-fixed h-100" >
